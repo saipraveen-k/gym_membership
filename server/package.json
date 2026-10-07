@@ -1,0 +1,36 @@
+{
+  "name": "gym-membership-server",
+  "version": "1.0.0",
+  "description": "Express + MongoDB backend for the Gym Membership Application",
+  "main": "server.js",
+  "type": "commonjs",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "nodemon server.js",
+    "seed": "node seed/seedMemberships.js",
+    "seed:memberships": "node seed/seedMemberships.js",
+    "seed:admin": "node seed/seedAdmin.js",
+    "test": "node tests/api.test.mjs",
+    "test:lifecycle": "node -r dotenv/config tests/lifecycle.check.mjs"
+  },
+  "keywords": [
+    "express",
+    "mongodb",
+    "mongoose",
+    "jwt",
+    "gym"
+  ],
+  "license": "MIT",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.21.2",
+    "express-validator": "^7.2.0",
+    "jsonwebtoken": "^9.0.2",
+    "mongoose": "^8.9.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.9"
+  }
+}
